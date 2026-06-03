@@ -1,4 +1,11 @@
-import { ADDRESS, HOURS, INSTAGRAM_URL, PHONE, PHONE_HREF } from "@/lib/constants";
+import {
+  ADDRESS,
+  HOURS,
+  INSTAGRAM_HANDLE,
+  INSTAGRAM_URL,
+  PHONE,
+  PHONE_HREF,
+} from "@/lib/constants";
 import { BrandLockup } from "./ui/BrandLockup";
 import { Logo } from "./Logo";
 
@@ -27,7 +34,7 @@ export function Footer() {
                     rel="noopener noreferrer"
                     className="transition-colors hover:text-stone"
                   >
-                    Instagram
+                    @{INSTAGRAM_HANDLE}
                   </a>
                 </li>
                 <li>

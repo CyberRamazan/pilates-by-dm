@@ -1,7 +1,8 @@
-export const WHATSAPP_URL = "https://wa.me/77000000000";
-export const PHONE = "+7 (777) 000-00-00";
-export const PHONE_HREF = "tel:+77770000000";
-export const INSTAGRAM_URL = "https://instagram.com/";
+export const WHATSAPP_URL = "https://wa.me/77059768487";
+export const PHONE = "+7 (705) 976-84-87";
+export const PHONE_HREF = "tel:+77059768487";
+export const INSTAGRAM_HANDLE = "pilates_center_aktau";
+export const INSTAGRAM_URL = "https://www.instagram.com/pilates_center_aktau/";
 export const ADDRESS = "7 а мкр., 26 дом, 9 к.п., Актау";
 export const HOURS = "Пн–Сб: 09:00–20:00";
 export const FOUNDER_SCRIPT = "by Diana Muratova";
