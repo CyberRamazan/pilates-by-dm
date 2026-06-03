@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --lavender: #e6e6fa;
+    --lavender-light: #f0f0fc;
+    --lavender-soft: #f5f5fd;
+    --lavender-deep: #d4c4d4;
+    --lavender-petal: #d8d4ec;
+    --ink: #1a1918;
+    --stone: #5c5560;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans text-[15px] font-normal leading-relaxed text-ink antialiased;
+    background-color: var(--lavender);
+  }
+
+  ::selection {
+    @apply text-ink;
+    background-color: color-mix(in srgb, var(--lavender-deep) 30%, transparent);
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply relative px-6 py-20 md:px-10 md:py-28 lg:px-14 lg:py-32;
+  }
+
+  .section-padding-tight {
+    @apply relative px-6 py-14 md:px-10 md:py-20 lg:px-14;
+  }
+
+  .section-label {
+    @apply font-sans text-[10px] font-medium uppercase tracking-[0.32em] text-stone;
+  }
+
+  .editorial-rule {
+    @apply h-px w-full bg-ink/15;
+  }
+
+  .editorial-link {
+    @apply inline-flex items-center gap-2 font-sans text-[13px] tracking-wide text-ink transition-colors duration-300 hover:text-stone;
+  }
+
+  .editorial-link::after {
+    content: "";
+    @apply h-px w-6 bg-ink/25 transition-all duration-300;
+  }
+
+  .editorial-link:hover::after {
+    @apply w-10 bg-ink/40;
+  }
+
+  .surface-light {
+    background-color: color-mix(in srgb, var(--lavender-light) 80%, transparent);
+  }
+
+  .surface-soft {
+    background-color: color-mix(in srgb, var(--lavender-soft) 90%, transparent);
+  }
+}
